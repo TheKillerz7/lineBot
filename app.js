@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 app.post('/posting', (req, res) => {
   console.log(req.body)
   console.log('dsa')
-  res.send('dsass')
+  res.send('dsass    ', req)
 })
 
 
