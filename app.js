@@ -12,11 +12,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 })
 
-app.post('/posting', (req, res) => {
-  console.log(req.body)
-  console.log('dsa')
-  res.send('dsass    '+ req.body.username)
-})
+app.post('/posting', send)
 
 
 app.listen(process.env.PORT || 5000)
