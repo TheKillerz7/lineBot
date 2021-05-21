@@ -8,7 +8,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 })
 
-app.post('/posting', send)
+app.post('/posting', (req, res) => {
+  console.log(req)
+  res.send('dsa')
+})
 
 
 app.listen(process.env.PORT || 5000)
