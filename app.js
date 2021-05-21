@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 })
 
-app.use('/posting', send)
+app.post('/posting', send)
 
 
 app.listen(process.env.PORT || 5000)
