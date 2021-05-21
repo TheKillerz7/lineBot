@@ -2,6 +2,8 @@ const request = require('request-promise')
 
 const send = (req, res) =>{
     reply(req.body.events[0].replyToken, { type: "text", text: "dsa" })
+
+    return null
 }
 
 const reply = (rt, payload) => {
