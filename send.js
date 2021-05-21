@@ -1,5 +1,5 @@
 const send = (req, res) =>{
-    res.send('edsa')
+    console.log(req)
 }
 
 module.exports = send
