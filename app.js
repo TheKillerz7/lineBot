@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/posting', (req, res) => {
-  console.log(req)
+  console.log(req.body)
   res.send('dsa')
 })
 
