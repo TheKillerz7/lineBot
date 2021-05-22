@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/posting', (req, res) => {
-  reply(req.body.events[0].replyToken, { type: "text", text: "dsa" })
+  reply(req.body.events[0].replyToken || "", { type: "text", text: "dsa" })
 
   res.sendStatus(200)
 })
