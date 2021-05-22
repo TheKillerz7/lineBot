@@ -32,7 +32,7 @@ app.post('/posting', line.middleware(config),  (req, res) => {
   })
 })
 
-//push message
+//get followers ids
 // const ids = request.post({
 //   url: "https://api.line.me/v2/bot/followers/ids",
 //   headers: {
