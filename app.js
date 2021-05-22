@@ -20,7 +20,7 @@ app.post('/posting', (req, res) => {
 })
 
 const reply = (rt, payload) => {
-  request.post('https://api.line.me/v2/bot/channel/webhook/https://linetestwork.herokuapp.com/posting', {
+  request.post('https://api.line.me/v2/bot/message/reply', {
       headers: {
           "Content-Type" : "application/json",
           Authorization: `Bearer 
