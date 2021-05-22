@@ -25,7 +25,7 @@ const reply = (rt, payload) => {
       },
       body: JSON.stringify({
           "replyToken": rt.events[0].replyToken,
-          "messages": [{ type: "text", text: "dsa" }]
+          "messages": [{ "type": "text", "text": "dsa" }]
       })
   })
 }
